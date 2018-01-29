@@ -130,7 +130,7 @@ bool CheckEPow(uint256 hash2,uint256 hash){
 	}
 	uint256 cnum,min,max;
 	max.SetHex("100000000");
-	min.SetHex("5");
+	min.SetHex("1");
 	cnum=GetEPow(hash2,hash);
 	LogPrintf("my epow %s max %s min %s\n",cnum.GetHex(),max.GetHex(),min.GetHex());
 	if(UintToArith256(cnum)>UintToArith256(max)||UintToArith256(cnum)<UintToArith256(min)){
