@@ -385,7 +385,7 @@ public:
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
-	vSeeds.emplace_back("4fe551eec29c", true);
+	vSeeds.emplace_back("d42fe63bd24c", true);
 
         fDefaultConsistencyChecks = true;
         fRequireStandard = false;
