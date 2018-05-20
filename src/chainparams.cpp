@@ -265,6 +265,7 @@ public:
 class CRegTestParams : public CChainParams {
 public:
     CRegTestParams() {
+      /*
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 210000;
         consensus.BIP34Height = 21111;
@@ -340,7 +341,7 @@ public:
             14706531,
             0.15
         };
-      /*
+      */
         strNetworkID = "regtest";
         consensus.nSubsidyHalvingInterval = 150;
         consensus.BIP34Height = 100000000; // BIP34 has not activated on regtest (far in the future so block v1 are not rejected in tests)
@@ -384,6 +385,7 @@ public:
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
+	vSeeds.emplace_back("4fe551eec29c", true);
 
         fDefaultConsistencyChecks = true;
         fRequireStandard = false;
@@ -406,7 +408,7 @@ public:
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
-      */
+      
     }
 };
 
