@@ -385,7 +385,7 @@ public:
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
-	vSeeds.emplace_back(CDNSSeedData("3f4638fb2171", "dongball.com", true));
+	vSeeds.emplace_back("dongball.com");
 
         fDefaultConsistencyChecks = true;
         fRequireStandard = false;
